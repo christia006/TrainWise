@@ -112,30 +112,26 @@ Berikut adalah beberapa hasil eksperimen dan visualisasi yang dihasilkan dari Tr
 | Random Forest (Exp 7) | ![RF Feature Importance Exp7](logs/plots/RandomForest_feature_importance_exp7.png) |
 
 ---
+## 🧪 Tambahan: Semua Hasil Eksperimen
 
-## 🤝 Kontribusi & Kontak
+Berikut dokumentasi visual dari hasil-hasil eksperimen yang telah dilakukan:
+
+| Judul Visualisasi   | Pratinjau |
+|---------------------|-----------|
+| Semua Eksperimen    | ![All Experiments](images/all%20experiment.png) |
+| Eksperimen 1        | ![Experiment 1](images/experiment%201.png) |
+| Eksperimen 2        | ![Experiment 2](images/experiment%202.png) |
+| Eksperimen 3        | ![Experiment 3](images/experiment%203.png) |
+| Eksperimen 4        | ![Experiment 4](images/experiment%204.png) |
+| Eksperimen 5        | ![Experiment 5](images/experiment%205.png) |
+
+---
+
+
 
 Proyek ini dikembangkan oleh:
 
 👤 **Christian J. Hutahaean**  
-📫 christia006@gmail.com  
-🌐 [LinkedIn](https://www.linkedin.com/in/christian-hutahaean)
-
-Jika kamu tertarik untuk berkontribusi atau memiliki saran perbaikan, jangan ragu untuk menghubungi saya. Kontribusi terbuka untuk umum!
 
 ---
-
-## 🧪 Tambahan: Semua Hasil Eksperimen
-
-| Gambar Keseluruhan | |
-|--------------------|--|
-| Semua Eksperimen | ![All Experiments](all experiment.png) |
-| Eksperimen 1 | ![Exp 1](experiment 1.png) |
-| Eksperimen 2 | ![Exp 2](experiment 2.png) |
-| Eksperimen 3 | ![Exp 3](experiment 3.png) |
-| Eksperimen 4 | ![Exp 4](experiment 4.png) |
-| Eksperimen 5 | ![Exp 5](experiment 5.png) |
-
----
-
 > “Build locally. Think globally.” — TrainWise
