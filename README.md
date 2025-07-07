@@ -9,7 +9,7 @@
 TrainWise memudahkan  dalam melakukan preprocessing data, memilih algoritma ML, melatih model, mengevaluasi performa, dan menyimpan hasilnya semua dalam satu antarmuka interaktif. Dengan integrasi database PostgreSQL, setiap eksperimen tercatat dengan baik dan bisa dilacak kembali.
 
 ---
-## 🔄 Alur Program Inti TrainWise
+## 🔄 Alur Program 
 
 Bagaimana sebenarnya TrainWise bekerja di balik layar? Di bawah ini adalah perjalanan lengkap sebuah eksperimen dari awal hingga akhir. Bayangkan ini seperti "dapur rahasia" sistem AutoML kamu — otomatis, rapi, dan bisa diandalkan.
 
