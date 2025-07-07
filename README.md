@@ -9,6 +9,80 @@
 TrainWise memudahkan  dalam melakukan preprocessing data, memilih algoritma ML, melatih model, mengevaluasi performa, dan menyimpan hasilnya semua dalam satu antarmuka interaktif. Dengan integrasi database PostgreSQL, setiap eksperimen tercatat dengan baik dan bisa dilacak kembali.
 
 ---
+## 🔄 Alur Program Inti TrainWise
+
+Bagaimana sebenarnya TrainWise bekerja di balik layar? Di bawah ini adalah perjalanan lengkap sebuah eksperimen dari awal hingga akhir. Bayangkan ini seperti "dapur rahasia" sistem AutoML kamu — otomatis, rapi, dan bisa diandalkan.
+
+---
+
+### 🛠️ 1. Inisiasi & Persiapan
+
+📁 Sebelum memulai eksperimen:
+- Program memastikan struktur folder penting tersedia: `data/`, `models/`, dan `logs/`.
+- Koneksi ke **PostgreSQL** dibuka dan tabel-tabel penting diverifikasi (atau dibuat otomatis).
+  
+> Semua siap!.
+
+---
+
+### 📝 2. Pencatatan Eksperimen Baru
+
+📌 Setiap eksperimen diawali dengan mencatat:
+- **Nama eksperimen**, **nama file dataset**, dan **target kolom** ke dalam tabel `experiments`.
+- Status awal diatur menjadi `'running'`.
+
+> Bayangkan aja seperti menulis resep baru di buku masak eksperimenmulah.
+
+---
+
+### 🧼 3. Pra-Pemrosesan Data Otomatis
+
+📊 Begitu file CSV diunggah:
+- Fitur **numerik dan kategorikal** dikenali otomatis.
+- Dilakukan langkah preprocessing:
+  - **Nilai hilang**? Diimputasi! (mean untuk numerik, modus untuk kategorikal).
+  - **Numerik**? Di-scale dengan `StandardScaler`.
+  - **Kategorikal**? Diubah ke angka lewat One-Hot Encoding.
+- Split data ke **training dan testing** set.
+
+> Data mentah diubah menjadi bahan siap masak untuk model machine learning.
+
+---
+
+### 🤖 4. Pelatihan & Evaluasi Model
+
+Untuk setiap model yang dipilih:
+
+#### ✅ Decision Tree  
+#### 🌲 Random Forest  
+#### 💠 Support Vector Machine (SVM)
+
+Langkah-langkah yang dilakukan:
+
+1. **Latih model** dengan data training.
+2. **Simpan model** ke `.joblib` dan catat path-nya ke database.
+3. **Evaluasi model**:
+   - Gunakan metrik standar: Akurasi, Presisi, Recall, F1-Score, ROC AUC.
+   - Hasil disimpan ke tabel `metrics`.
+4. **Visualisasi otomatis**:
+   - ✅ Confusion Matrix untuk melihat performa klasifikasi.
+   - 🌟 Feature Importance (khusus model berbasis pohon).
+
+> Satu per satu model diuji. Siapa yang tampil terbaik? Semua dicatat dengan rapi.
+
+---
+
+### ✅ 5. Penyelesaian & Penutupan
+
+📌 Setelah semua model selesai:
+- Status eksperimen diperbarui ke `'completed'`.
+- Jika terjadi error saat proses, status otomatis berubah menjadi `'failed'` agar mudah dilacak.
+
+🔒 Terakhir, koneksi ke database PostgreSQL ditutup.
+
+> Seperti menutup buku resep setelah masakan siap disajikan.
+
+---
 
 ## 🚀 Fitur Utama Platform AutoML
 
