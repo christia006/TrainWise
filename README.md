@@ -4,9 +4,16 @@
 
 ---
 
-## 🧠 Deskripsi Singkat
+## 🎯 Contoh Kasus Nyata Penggunaan Platform Ini
 
-TrainWise memudahkan  dalam melakukan preprocessing data, memilih algoritma ML, melatih model, mengevaluasi performa, dan menyimpan hasilnya semua dalam satu antarmuka interaktif. Dengan integrasi database PostgreSQL, setiap eksperimen tercatat dengan baik dan bisa dilacak kembali.
+| **Domain**     | **Studi Kasus**                                        | **Solusi yang Dibantu oleh Platform**                                                        |
+|----------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| **Kesehatan**  | Prediksi penyakit berdasarkan data pasien (CSV)        | Upload data → AutoML pilih model → hasil + evaluasi tersimpan untuk analisis medis          |
+| **Pendidikan** | Prediksi kelulusan atau dropout mahasiswa              | Input data akademik → sistem pilih algoritma terbaik → visualisasi akurasi dan metrik       |
+| **Pertanian**  | Prediksi hasil panen dari cuaca & tanah                | Dataset CSV dari sensor lapangan → preprocessing + model → hasil disimpan & dianalisis lokal|
+| **Manufaktur** | Deteksi produk cacat berdasarkan fitur pengukuran      | Upload CSV sensor produksi → klasifikasi otomatis → disimpan untuk audit QC                 |
+| **Startup AI** | Uji coba berbagai model cepat untuk MVP                | Upload dataset mentah → langsung lihat performa model tanpa perlu setup manual sklearn keras|
+
 
 ---
 ## 🔄 Alur Program 
