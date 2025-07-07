@@ -10,25 +10,78 @@ TrainWise memudahkan kamu dalam melakukan preprocessing data, memilih algoritma 
 
 ---
 
-## 🔧 Fitur Utama
+---
 
-- ✅ Upload file CSV langsung dari lokal.
-- 🧼 Auto-preprocessing data (handle missing value, encoding, dsb).
-- 🤖 Dukungan algoritma: Decision Tree, Random Forest, dan SVM.
-- 📊 Evaluasi otomatis (akurasi, precision, recall, F1-score).
-- 📁 Simpan model jadi file `.pkl` untuk dipakai ulang.
-- 🧠 Tracking semua eksperimen ke database PostgreSQL.
-- 📈 Visualisasi hasil: confusion matrix & feature importance.
+## 🚀 Fitur Utama Platform AutoML
+
+Platform **TrainWise** dirancang untuk menyederhanakan proses machine learning secara end-to-end, dengan fokus utama pada klasifikasi data. Berikut fitur-fitur unggulannya:
+
+### ⚙️ Preprocessing Data Otomatis
+- Menangani nilai hilang menggunakan:
+  - **Imputasi mean** untuk kolom numerik.
+  - **Imputasi modus** untuk kolom kategorikal.
+- Scaling fitur numerik menggunakan `StandardScaler`.
+- Encoding fitur kategorikal dengan **One-Hot Encoding**.
+- Semua transformasi disatukan dalam pipeline `ColumnTransformer` untuk efisiensi.
+
+### 🤖 Pelatihan dan Evaluasi Model Serbaguna
+- Mendukung model klasifikasi:  
+  ✅ Decision Tree  
+  ✅ Random Forest  
+  ✅ Support Vector Machine (SVM)
+- Hyperparameter dapat disesuaikan.
+- Evaluasi model meliputi:  
+  `Accuracy`, `Precision`, `Recall`, `F1-Score`, `ROC AUC`.
+
+### 🗃️ Manajemen Eksperimen Terpusat
+- Semua eksperimen dicatat ke **PostgreSQL** dengan metadata lengkap:
+  - Nama eksperimen, dataset, target kolom.
+  - Status (berjalan, selesai, gagal).
+  - Timestamp mulai dan selesai.
+  - Catatan tambahan.
+
+### 🧠 Pencatatan & Pelacakan Model
+- Setiap model yang dilatih dicatat dengan informasi berikut:
+  - Nama model & path file.
+  - Parameter pelatihan & waktu eksekusi.
+  - Log file spesifik untuk model tersebut.
+
+### 📊 Penyimpanan Metrik Kinerja
+- Skor evaluasi **train & test set** tersimpan otomatis.
+- Memungkinkan perbandingan kinerja antar eksperimen dan model.
+
+### 📈 Visualisasi Hasil Otomatis
+- Menyimpan hasil visualisasi seperti:
+  - **Confusion Matrix** untuk mengevaluasi prediksi.
+  - **Feature Importance** untuk model berbasis pohon (Decision Tree, Random Forest).
+
+### 💾 Penyimpanan Artefak Model
+- Model tersimpan dalam format `.joblib`:
+  - Mudah di-reload untuk inference.
+  - Memungkinkan reusabilitas model tanpa retraining.
+
+### 📝 Sistem Logging Ekstensif
+- Logging menyeluruh ke:
+  - Konsol selama runtime.
+  - File log terpisah untuk tiap eksperimen.
+- Mempermudah debugging & pelacakan kesalahan.
 
 ---
 
 ## 🛠 Teknologi yang Digunakan
 
-- **Bahasa Pemrograman**: Python
-- **Library ML & Analisis**:  
-  `scikit-learn`, `pandas`, `numpy`, `matplotlib`, `seaborn`
-- **Database**: PostgreSQL + `psycopg2`
-- **Framework UI**: Streamlit
+Platform ini dibangun dengan kombinasi teknologi Python dan sistem database relasional untuk memastikan kestabilan dan keterlacakan eksperimen:
+
+| Teknologi | Keterangan |
+|-----------|------------|
+| **Python** | Bahasa pemrograman utama untuk seluruh platform. |
+| **Scikit-learn** | Untuk preprocessing (`StandardScaler`, `OneHotEncoder`, `SimpleImputer`), pembuatan pipeline (`ColumnTransformer`), dan model ML (`RandomForestClassifier`, `DecisionTreeClassifier`, `SVC`). |
+| **Pandas** | Manipulasi data dan loading file CSV ke dalam `DataFrame`. |
+| **NumPy** | Operasi numerik dan pengelolaan array dengan performa tinggi. |
+| **Matplotlib & Seaborn** | Visualisasi hasil eksperimen: Confusion Matrix dan Feature Importance. |
+| **PostgreSQL** | Database relasional untuk menyimpan semua metadata eksperimen dan model. |
+| **Psycopg2** | Adapter PostgreSQL untuk Python, mengelola koneksi dan query ke database. |
+| **joblib** | Untuk menyimpan dan memuat ulang model yang sudah dilatih. |
 
 ---
 
