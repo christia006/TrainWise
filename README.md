@@ -1,33 +1,22 @@
-# ⚙️ TrainWise — Platform AutoML Lokal dengan PostgreSQL
+# ⚙️ TrainWise — Platform Latih Model ML Sendiri Secara Lokal
 
-**TrainWise** adalah platform pembelajaran mesin otomatis (AutoML) yang sepenuhnya berjalan secara lokal. Aplikasi ini memungkinkan pengguna untuk mengunggah dataset `.csv`, memilih algoritma, dan melatih model ML langsung di komputer mereka — tanpa ketergantungan cloud atau API eksternal.
+**TrainWise** adalah alat bantu untuk latihan machine learning secara lokal. Kamu bisa upload dataset `.csv`, pilih model, latih langsung dari komputer kamu, dan simpan modelnya buat dipakai ulang. Semuanya tanpa perlu akses internet.
 
-## 🎯 Tujuan Proyek
+## 🔧 Fitur Utama
 
-- Membangun pipeline pelatihan ML yang bersih, reusable, dan dapat digunakan siapa pun.
-- Mengintegrasikan penyimpanan metadata dan konfigurasi pelatihan ke dalam PostgreSQL.
-- Menyediakan antarmuka interaktif (Streamlit) untuk eksperimen model, evaluasi performa, dan manajemen hasil pelatihan.
-- Menyimpan model terlatih dalam format `.pkl` yang dapat digunakan kembali.
+- Upload file CSV langsung dari lokal.
+- Bersihin data otomatis (missing value, encoding, dsb).
+- Pilih algoritma: Decision Tree, Random Forest, atau SVM.
+- Lihat hasil evaluasi seperti akurasi & confusion matrix.
+- Semua hasil dan info disimpan ke database PostgreSQL.
+- Bisa export model jadi file `.pkl`.
 
-## 🧩 Fitur Utama
+## 🛠 Teknologi yang Dipakai
 
-- Upload dataset lokal (`.csv`) melalui antarmuka.
-- Preprocessing otomatis (missing values, encoding, scaling).
-- Pilihan algoritma: Random Forest, Decision Tree, SVM.
-- Evaluasi model (akurasi, matriks kebingungan, ROC).
-- Metadata dan hasil disimpan di PostgreSQL.
-- Model dapat diunduh dan digunakan kembali.
+- Python · pandas · scikit-learn
+- PostgreSQL (pakai pgAdmin 4)
+- Streamlit buat tampilan interaktif
 
-## 🛠️ Teknologi yang Digunakan
+## 💡 Kenapa Menarik
 
-- Python · scikit-learn · pandas · matplotlib
-- PostgreSQL (via pgAdmin 4) · SQLAlchemy
-- Streamlit (antarmuka pengguna)
-
-## 📌 Mengapa Proyek Ini Dilirik Google
-
-TrainWise mencerminkan prinsip internal seperti yang digunakan di Vertex AI — pipeline pelatihan, evaluasi model, dan versioning. Menampilkan kemampuan dalam:
-
-- Desain sistem machine learning terstruktur
-- Clean Architecture & separation of concerns
-- Integrasi database untuk manajemen eksperimen
+Proyek  ML tanpa ribet setup cloud. Semua dikelola rapi, datanya disimpan dengan PostgreSQL, dan workflow-nya mirip seperti alat internal yang dipakai di perusahaan besar. Intinya: alat sederhana tapi serius.
