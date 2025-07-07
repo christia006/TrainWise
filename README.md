@@ -1,12 +1,12 @@
 # ⚙️ TrainWise — Platform Latih Model ML Sendiri Secara Lokal
 
-**TrainWise** adalah platform sederhana namun powerful untuk melatih model Machine Learning langsung dari komputer kamu tanpa perlu koneksi internet. Cocok buat eksperimen, riset pribadi, atau pembelajaran hands-on di bidang AI/ML.
+**TrainWise** adalah platform sederhana namun powerful untuk melatih model Machine Learning langsung dari komputer  tanpa perlu koneksi internet. Cocok buat eksperimen, riset pribadi, atau pembelajaran hands-on di bidang AI/ML.
 
 ---
 
 ## 🧠 Deskripsi Singkat
 
-TrainWise memudahkan kamu dalam melakukan preprocessing data, memilih algoritma ML, melatih model, mengevaluasi performa, dan menyimpan hasilnya — semua dalam satu antarmuka interaktif. Dengan integrasi database PostgreSQL, setiap eksperimen tercatat dengan baik dan bisa dilacak kembali.
+TrainWise memudahkan  dalam melakukan preprocessing data, memilih algoritma ML, melatih model, mengevaluasi performa, dan menyimpan hasilnya — semua dalam satu antarmuka interaktif. Dengan integrasi database PostgreSQL, setiap eksperimen tercatat dengan baik dan bisa dilacak kembali.
 
 ---
 
