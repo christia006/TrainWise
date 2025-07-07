@@ -10,8 +10,6 @@ TrainWise memudahkan kamu dalam melakukan preprocessing data, memilih algoritma 
 
 ---
 
----
-
 ## 🚀 Fitur Utama Platform AutoML
 
 Platform **TrainWise** dirancang untuk menyederhanakan proses machine learning secara end-to-end, dengan fokus utama pada klasifikasi data. Berikut fitur-fitur unggulannya:
