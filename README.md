@@ -1,19 +1,29 @@
-# ⚙️ TrainWise — Platform Latih Model ML Sendiri Secara Lokal
+<div align="center">
 
-**TrainWise** adalah platform sederhana namun powerful untuk melatih model Machine Learning langsung dari komputer  tanpa perlu koneksi internet. Cocok buat eksperimen, riset pribadi, atau pembelajaran hands-on di bidang AI/ML.
+# ⚙️ **TrainWise — Platform Latih Model ML Sendiri Secara Lokal**
 
----
+*Platform sederhana namun powerful untuk melatih model Machine Learning langsung dari komputer  
+tanpa perlu koneksi internet. Cocok untuk eksperimen, riset pribadi, atau pembelajaran hands-on di bidang AI/ML.*
 
-## 🎯 Contoh Kasus Nyata Penggunaan Platform Ini
+[![last commit](https://img.shields.io/badge/last%20commit-today-brightgreen)](#)
+[![python](https://img.shields.io/badge/python-100%25-yellow?logo=python&logoColor=white)](#)
+[![local only](https://img.shields.io/badge/Runs%20Offline-✅-blue)](#)
 
-| **Domain**     | **Studi Kasus**                                        | **Solusi yang Dibantu oleh Platform**                                                        |
-|----------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| **Kesehatan**  | Prediksi penyakit berdasarkan data pasien (CSV)        | Upload data → AutoML pilih model → hasil + evaluasi tersimpan untuk analisis medis          |
-| **Pendidikan** | Prediksi kelulusan atau dropout mahasiswa              | Input data akademik → sistem pilih algoritma terbaik → visualisasi akurasi dan metrik       |
-| **Pertanian**  | Prediksi hasil panen dari cuaca & tanah                | Dataset CSV dari sensor lapangan → preprocessing + model → hasil disimpan & dianalisis lokal|
-| **Manufaktur** | Deteksi produk cacat berdasarkan fitur pengukuran      | Upload CSV sensor produksi → klasifikasi otomatis → disimpan untuk audit QC                 |
-| **Startup AI** | Uji coba berbagai model cepat untuk MVP                | Upload dataset mentah → langsung lihat performa model tanpa perlu setup manual sklearn keras|
+*Built with the tools and technologies:*
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML%20Models-f7931e?logo=scikit-learn&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-Data%20Handling-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c?logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-5790c8?logo=seaborn&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?logo=postgresql&logoColor=white)
+![Psycopg2](https://img.shields.io/badge/Psycopg2-PostgreSQL%20Adapter-2c5d8e?logo=postgresql&logoColor=white)
+![joblib](https://img.shields.io/badge/joblib-Model%20Persistence-339933?logo=python&logoColor=white)
+
+![Offline](https://img.shields.io/badge/Offline%20Training-💻-important)
+![Easy Experiment Tracking](https://img.shields.io/badge/Experiment%20Tracking-📊-success)
+![Privacy First](https://img.shields.io/badge/Privacy%20First-🔒-blue)
 
 ---
 ## 🔄 Alur Program 
@@ -145,22 +155,6 @@ Platform **TrainWise** dirancang untuk menyederhanakan proses machine learning s
   - File log terpisah untuk tiap eksperimen.
 - Mempermudah debugging & pelacakan kesalahan.
 
----
-
-## 🛠 Teknologi yang Digunakan
-
-Platform ini dibangun dengan kombinasi teknologi Python dan sistem database relasional untuk memastikan kestabilan dan keterlacakan eksperimen:
-
-| Teknologi | Keterangan |
-|-----------|------------|
-| **Python** | Bahasa pemrograman utama untuk seluruh platform. |
-| **Scikit-learn** | Untuk preprocessing (`StandardScaler`, `OneHotEncoder`, `SimpleImputer`), pembuatan pipeline (`ColumnTransformer`), dan model ML (`RandomForestClassifier`, `DecisionTreeClassifier`, `SVC`). |
-| **Pandas** | Manipulasi data dan loading file CSV ke dalam `DataFrame`. |
-| **NumPy** | Operasi numerik dan pengelolaan array dengan performa tinggi. |
-| **Matplotlib & Seaborn** | Visualisasi hasil eksperimen: Confusion Matrix dan Feature Importance. |
-| **PostgreSQL** | Database relasional untuk menyimpan semua metadata eksperimen dan model. |
-| **Psycopg2** | Adapter PostgreSQL untuk Python, mengelola koneksi dan query ke database. |
-| **joblib** | Untuk menyimpan dan memuat ulang model yang sudah dilatih. |
 
 ---
 
