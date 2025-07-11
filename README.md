@@ -5,10 +5,6 @@
 *Platform sederhana namun powerful untuk melatih model Machine Learning langsung dari komputer  
 tanpa perlu koneksi internet. Cocok untuk eksperimen, riset pribadi, atau pembelajaran hands-on di bidang AI/ML.*
 
-[![last commit](https://img.shields.io/badge/last%20commit-today-brightgreen)](#)
-[![python](https://img.shields.io/badge/python-100%25-yellow?logo=python&logoColor=white)](#)
-[![local only](https://img.shields.io/badge/Runs%20Offline-✅-blue)](#)
-
 *Built with the tools and technologies:*
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
