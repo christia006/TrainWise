@@ -22,6 +22,7 @@ tanpa perlu koneksi internet. Cocok untuk eksperimen, riset pribadi, atau pembel
 ![Privacy First](https://img.shields.io/badge/Privacy%20First-🔒-blue)
 
 </div>
+
 ## 🔄 Alur Program 
 
 Bagaimana sebenarnya TrainWise bekerja di balik layar? Di bawah ini adalah perjalanan lengkap sebuah eksperimen dari awal hingga akhir. Bayangkan ini seperti "dapur rahasia" sistem AutoML kamu — otomatis, rapi, dan bisa diandalkan.
